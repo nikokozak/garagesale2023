@@ -1,0 +1,64 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    padding: 2em;
+    margin: 0;
+}
+
+.item {
+    border: lightgray 1px solid;
+    padding: 10px;
+    border-radius: 5px;
+    max-width: 420px;
+    margin-bottom: 30px;
+}
+
+.item .header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 0;
+}
+
+.item .price {
+    display: flex;
+    justify-content: space-between;
+}
+
+.item .price .available { 
+    color: darkgreen;
+}
+
+.item .price .sold { 
+    color: darkred;
+}
+
+#items {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.item .price p{
+    margin-top: 0;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.item img {
+    max-width: 400px;
+    margin-bottom: 20px;
+}
+
+.item .photos .hidden-trigger, .show-trigger {
+    text-decoration: underline;
+    color: blue;
+}
+
+.item .photos .hidden {
+    display: none;
+}
